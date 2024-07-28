@@ -1,1 +1,1 @@
-body{display:flex;flex-direction:column;align-items:center;background-color:red}header{margin-top:2rem}button{background-color:#4f7df3}/*# sourceMappingURL=style.css.map */
+body{display:flex;flex-direction:column;align-items:center;font-family:"Libre Franklin",sans-serif;font-size:20px}header{margin-top:4.5rem}section{display:flex;flex-direction:column}section p{align-self:center;margin-top:2.4rem;letter-spacing:1px}button{background-color:#4f7df3}.bold{font-weight:700}.thin{font-weight:300}.black{color:#000}.gray{color:#969696}/*# sourceMappingURL=style.css.map */
