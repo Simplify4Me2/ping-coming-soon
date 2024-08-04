@@ -1,9 +1,20 @@
+// Colors
+$primary-blue: hsl(223, 87%, 63%)
+$secondary-pale-blue: hsl(223, 100%, 88%)
+$secondary-light-red: hsl(354, 100%, 66%)
+$neutral-gray: hsl(0, 0%, 59%)
+$neutral-very-dark-blue: hsl(209, 33%, 12%)
+    
+// Font
+$font-family: "Libre Franklin", sans-serif
+$font-size: 20px
+
 body
     display: flex
     flex-direction: column
     align-items: center
-    font-family: "Libre Franklin", sans-serif
-    font-size: 20px
+    font-family: $font-family
+    font-size: $font-size
 
 header
     margin-top: 4.5rem
@@ -15,6 +26,7 @@ section
 section form
     display: flex
     flex-direction: column
+    align-items: center
     margin: 2rem
 
 h1
@@ -30,7 +42,14 @@ h2
     margin: 0rem
     
 button 
-    background-color: hsl(223, 87%, 63%)
+    background-color: $secondary-pale-blue
+
+input
+    height: 2.2rem
+    min-width: 17rem
+    border-radius: 20px
+    border-width: thin
+    border-color: $secondary-pale-blue
 
 .bold
     font-weight: 700
@@ -41,8 +60,20 @@ button
 .black
     color: black
 
+.blue
+    color: hsl(223, 87%, 63%)
+
+.dark-blue
+    color: hsl(209, 33%, 12%)
+
 .gray
     color: hsl(0, 0%, 59%)
+
+.light-red
+    color: hsl(354, 100%, 66%)
+
+.pale-blue
+    color: hsl(223, 100%, 88%)
 
 .subtext
     font-size: 10px
