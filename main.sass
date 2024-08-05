@@ -8,6 +8,8 @@ $neutral-very-dark-blue: hsl(209, 33%, 12%)
 // Font
 $font-family: "Libre Franklin", sans-serif
 $font-size: 20px
+$font-weight-light: 300
+$font-weight-bold: 700
 
 body
     display: flex
@@ -37,7 +39,7 @@ h1
 
 h2
     font-size: 12px
-    font-weight: 300
+    font-weight: $font-weight-light
     align-self: center
     margin: 0rem
     
@@ -50,30 +52,37 @@ input
     border-radius: 20px
     border-width: thin
     border-color: $secondary-pale-blue
+    border-style: solid
+
+input::placeholder
+    color: $neutral-gray
+    font-weight: $font-weight-light
+    font-size: 12px
+    padding-left: 1.8rem
 
 .bold
-    font-weight: 700
+    font-weight: $font-weight-bold
 
 .thin
-    font-weight: 300
+    font-weight: $font-weight-light
 
 .black
     color: black
 
 .blue
-    color: hsl(223, 87%, 63%)
+    color: $primary-blue
 
 .dark-blue
-    color: hsl(209, 33%, 12%)
+    color: $neutral-very-dark-blue
 
 .gray
-    color: hsl(0, 0%, 59%)
+    color: $neutral-gray
 
 .light-red
-    color: hsl(354, 100%, 66%)
+    color: $secondary-light-red
 
 .pale-blue
-    color: hsl(223, 100%, 88%)
+    color: $secondary-pale-blue
 
 .subtext
     font-size: 10px
