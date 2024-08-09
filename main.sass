@@ -15,6 +15,9 @@ $font-size: 20px
 $font-weight-light: 300
 $font-weight-bold: 700
 
+// Media screen size
+$media-breakpoint: 768px
+
 body
     display: flex
     flex-direction: column
@@ -25,7 +28,7 @@ body
 header
     margin-top: 4.5rem
 
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: $media-breakpoint)
         font-size: 32px
 
 main
@@ -47,6 +50,10 @@ h1
     align-self: center
     margin-top: 2.4rem
     letter-spacing: 1px
+
+    @media screen and (min-width: $media-breakpoint)
+        font-size: 46px
+        margin-top: 2.6rem
 
 h2
     font-size: 12px
