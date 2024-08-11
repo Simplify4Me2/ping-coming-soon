@@ -45,6 +45,10 @@ section form
     align-items: center
     margin: 2rem
 
+    @media screen and (min-width: $media-breakpoint)
+        flex-direction: row
+        marrgin: 1.8rem
+
 h1
     font-size: 20px
     align-self: center
@@ -69,15 +73,26 @@ button
     background-color: $primary-blue
     height: 2.6rem
     min-width: 17.5rem
-    border-radius: 20px
+    border-radius: 30px
     margin: 0.7rem
     border-width: thin
     border-color: $primary-blue
     border-style: solid
 
+    @media screen and (min-width: $media-breakpoint)
+        min-width: 12.5rem
+        height: 3.5rem
+        margin-top: 0.5rem
+        margin-left: 0.5rem
+
 button p
     color: white
     margin-top: 0.7rem
+
+    @media screen and (min-width: $media-breakpoint)
+        margin-top: 1rem
+        font-size: 17px
+        letter-spacing: 0.5px
 
 footer i:first-child
     padding: 0.9rem 0.7rem
@@ -106,10 +121,17 @@ img
 input
     height: 2.2rem
     min-width: 17rem
-    border-radius: 20px
+    border-radius: 30px
     border-width: thin
     border-color: $secondary-pale-blue
     border-style: solid
+
+    @media screen and (min-width: $media-breakpoint)
+        height: 3.2rem
+        margin-bottom: 0.3rem
+        min-width: 26rem
+        margin-left: 0.7rem
+        margin-right: 0.5rem
 
 input::placeholder
     color: $neutral-gray
