@@ -1,1 +1,3 @@
-console.log("Index.js is alive!!!");
+window.onload = function () {
+    
+};
