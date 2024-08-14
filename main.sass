@@ -50,7 +50,8 @@ section form
 
     @media screen and (min-width: $media-breakpoint)
         flex-direction: row
-        marrgin: 1.8rem
+        margin: 2rem 0rem
+        max-width: 40rem
 
 h1
     font-size: 20px
@@ -90,7 +91,7 @@ button
         min-width: 12.5rem
         height: 3.5rem
         margin-top: 0.5rem
-        margin-left: 0.5rem
+        margin-right: 0rem
 
 button p
     color: white
@@ -100,6 +101,29 @@ button p
         margin-top: 1rem
         font-size: 17px
         letter-spacing: 0.5px
+
+input
+    font-size: 12px
+    height: 2.2rem
+    min-width: 15.2rem
+    border-radius: 30px
+    border-width: thin
+    border-color: $secondary-pale-blue
+    border-style: solid
+    text-align: left
+    padding-left: 1.8rem
+
+    @media screen and (min-width: $media-breakpoint)
+        font-size: 17px
+        height: 3.2rem
+        margin-bottom: 0.3rem
+        width: 24rem
+        margin-right: 0.5rem
+
+input::placeholder
+    color: $neutral-gray
+    font-weight: $font-weight-light
+    opacity: 40%
 
 footer i:first-child
     padding: 0.9rem 0.7rem
@@ -139,31 +163,6 @@ img
         width: 40rem
         height: 24rem   
         margin-top: 2.8rem
-
-input
-    height: 2.2rem
-    min-width: 17rem
-    border-radius: 30px
-    border-width: thin
-    border-color: $secondary-pale-blue
-    border-style: solid
-
-    @media screen and (min-width: $media-breakpoint)
-        height: 3.2rem
-        margin-bottom: 0.3rem
-        min-width: 26rem
-        margin-left: 0.7rem
-        margin-right: 0.5rem
-
-input::placeholder
-    color: $neutral-gray
-    font-weight: $font-weight-light
-    font-size: 12px
-    opacity: 40%
-    padding-left: 1.8rem
-
-    @media screen and (min-width: $media-breakpoint)
-        font-size: 17px
 
 .bold
     font-weight: $font-weight-bold
