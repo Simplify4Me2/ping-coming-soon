@@ -110,8 +110,14 @@ input
     border-width: thin
     border-color: $secondary-pale-blue
     border-style: solid
+    border: thin solid $secondary-pale-blue
     text-align: left
     padding-left: 1.8rem
+
+    &::placeholder
+        color: $neutral-gray
+        font-weight: $font-weight-light
+        opacity: 40%
 
     @media screen and (min-width: $media-breakpoint)
         font-size: 17px
@@ -119,11 +125,6 @@ input
         margin-bottom: 0.3rem
         width: 24rem
         margin-right: 0.5rem
-
-input::placeholder
-    color: $neutral-gray
-    font-weight: $font-weight-light
-    opacity: 40%
 
 footer i:first-child
     padding: 0.9rem 0.7rem
