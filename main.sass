@@ -53,6 +53,9 @@ section form
         margin: 2rem 0rem
         max-width: 40rem
 
+    &.noBottomMargin
+        margin: 2rem 2rem 0rem 2rem
+
 h1
     font-size: 20px
     align-self: center
@@ -124,7 +127,7 @@ input
         border-color: $primary-blue
 
     &.invalid
-        border-color: red
+        border-color: $secondary-light-red
 
     @media screen and (min-width: $media-breakpoint)
         font-size: 17px
@@ -132,6 +135,11 @@ input
         margin-bottom: 0.3rem
         width: 24rem
         margin-right: 0.5rem
+
+form span
+    font-size: 10px
+    color: $secondary-light-red
+    margin: 0.5rem 0rem 0.8rem
 
 footer i:first-child
     padding: 0.9rem 0.7rem
