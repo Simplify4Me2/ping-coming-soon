@@ -44,6 +44,7 @@ section
 
 section form
     display: flex
+    position: relative
     flex-direction: column
     align-items: center
     margin: 2rem
@@ -55,6 +56,9 @@ section form
 
     &.noBottomMargin
         margin: 2rem 2rem 0rem 2rem
+
+        @media screen and (min-width: $media-breakpoint)
+            margin: 2rem 0rem
 
 h1
     font-size: 20px
@@ -128,6 +132,10 @@ input
 
     &.invalid
         border-color: $secondary-light-red
+        margin-bottom: 2rem
+
+        @media screen and (min-width: $media-breakpoint)
+            margin-bottom: 0rem
 
     @media screen and (min-width: $media-breakpoint)
         font-size: 17px
@@ -139,7 +147,13 @@ input
 form span
     font-size: 10px
     color: $secondary-light-red
-    margin: 0.5rem 0rem 0.8rem
+    position: absolute
+    top: 2.9rem
+
+    @media screen and (min-width: $media-breakpoint)
+        font-size: 10px
+        top: 4.5rem
+        left: 2rem
 
 footer i:first-child
     padding: 0.9rem 0.7rem
