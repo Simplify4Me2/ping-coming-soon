@@ -7,8 +7,21 @@ function handleClick(event) {
 
     const inputField = document.getElementById("eMailInput");
     const formField = document.getElementById("eMailForm");
+    const emptyMessageField = document.getElementById("emptyMsg");
+    
+    if (inputField.value === undefined || inputField.value === "") {
+      inputField.classList.add("invalid");
+      formField.classList.add("noBottomMargin");
+      emptyMessageField.hidden = false;
+      return;
+    }
+    else {
+      inputField.classList.remove("invalid");
+      formField.classList.remove("noBottomMargin");
+      emptyMessageField.hidden = true;
+    }
+  
     const validationMessageField = document.getElementById("validationMsg");
-
     const isValid = ValidateEmail(inputField.value)
 
     if(!isValid) {
